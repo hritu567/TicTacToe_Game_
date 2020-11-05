@@ -9,9 +9,9 @@ public class TicTacToeGame {
 	private static char[] createGameBoard()
 	{
 		char[] board = new char[10];
-		for(int idx=1 ; i < board.length ; idx++)
+		for(int idx=1 ; idx < board.length ; idx++)
 		{
-			board[i] = ' ';
+			board[idx] = ' ';
 		}
 		return board;
 	}
