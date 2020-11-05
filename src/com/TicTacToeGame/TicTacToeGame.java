@@ -1,6 +1,5 @@
 package com.TicTacToeGame;
 import java.util.Scanner;
-
 /*uc3*/
 public class TicTacToeGame {
 	static char[] board = new char[10];
@@ -16,7 +15,6 @@ public class TicTacToeGame {
 		}
 		return board;
 	}	
-	
 	/* choosing letter for player and computer */	
 	private void chooseLetter() {
 		System.out.println("Enter the Letter 'X' or 'O'");
@@ -30,7 +28,7 @@ public class TicTacToeGame {
 				player = s.next().charAt(0);
 			}
 		}
-	
+
 	/* Printing out the game Board */
 	private static void showBoard() {
 		for (int idx = 1; idx < board.length; idx = idx + 3) {
