@@ -31,7 +31,7 @@ public class TicTacToeGame {
 	/* Printing out the game Board */
 	private static void showBoard() {
 		for (int idx = 1; idx < board.length; idx = idx + 3) {
-			System.out.println( " | " + board[idx] +" | "  + board[idx+1]  + " | "  + board[idx+2] );
+			System.out.println( " | " + board[idx] + " | "  + board[idx+1]  + " | "  + board[idx+2] );
 		}
 	}
 	
