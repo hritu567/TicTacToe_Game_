@@ -2,7 +2,7 @@ package com.TicTacToeGame;
 import java.util.Scanner;
 /*uc2*/
 public class TicTacToeGame {
-	public static Scanner sc = new Scanner(System.in);
+	public static Scanner s = new Scanner(System.in);
 	public static char player, computer;
 	private void createGameBoard()
 	{
@@ -12,10 +12,11 @@ public class TicTacToeGame {
 			board[idx]= ' ';
 		}
 	}
+	/* choosing letter for player and computer */
 	private void chooseLetter() {
 		System.out.println("Enter the Letter 'X' or 'O'");
 		while (true) {
-			player = sc.next().charAt(0);
+			player = s.next().charAt(0);
 			if (player == 'X' || player == 'x') {
 				computer = 'O';
 			} else if (player == '0' || player == 'o') {
@@ -26,7 +27,7 @@ public class TicTacToeGame {
 			}
 		}
 	}
-
+/* calling other functions into main function*/
 	public static void main(String[] args) {
 		TicTacToeGame ticTacToe = new TicTacToeGame();
 		ticTacToe.createGameBoard();
