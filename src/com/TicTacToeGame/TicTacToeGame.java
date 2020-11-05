@@ -39,6 +39,7 @@ public class TicTacToeGame {
 		System.out.println("--+---+--");
 		System.out.println(board[7] + " | " + board[8] + " | " + board[9]);
 		}
+	
 /* calling other functions into main function*/
 	public static void main(String[] args) {
 		TicTacToeGame ticTacToe = new TicTacToeGame();
