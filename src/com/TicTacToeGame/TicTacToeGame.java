@@ -28,7 +28,6 @@ public class TicTacToeGame {
 				player = s.next().charAt(0);
 			}
 		}
-	//}
 	/* Printing out the game Board */
 	private static void showBoard() {
 		for (int idx = 1; idx < board.length; idx = idx + 3) {
